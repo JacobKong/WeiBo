@@ -31,23 +31,23 @@
 /* Begin PBXFileReference section */
 		184B2D251B9F013D00A3AE24 /* WeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B2D291B9F013D00A3AE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		184B2D2A1B9F013D00A3AE24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		184B2D2C1B9F013D00A3AE24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		184B2D2D1B9F013D00A3AE24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		184B2D2A1B9F013D00A3AE24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
+		184B2D2C1B9F013D00A3AE24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		184B2D2D1B9F013D00A3AE24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		184B2D351B9F013D00A3AE24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		184B2D3E1B9F013E00A3AE24 /* WeiBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B2D431B9F013E00A3AE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184B2D441B9F013E00A3AE24 /* WeiBoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiBoTests.m; sourceTree = "<group>"; };
-		184B2D531B9F039D00A3AE24 /* WBTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBarViewController.h; sourceTree = "<group>"; };
-		184B2D541B9F039D00A3AE24 /* WBTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBarViewController.m; sourceTree = "<group>"; };
-		184B2D881B9F171200A3AE24 /* WBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHomeViewController.h; sourceTree = "<group>"; };
-		184B2D891B9F171200A3AE24 /* WBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHomeViewController.m; sourceTree = "<group>"; };
-		184B2D8B1B9F171E00A3AE24 /* WBMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMessageViewController.h; sourceTree = "<group>"; };
-		184B2D8C1B9F171E00A3AE24 /* WBMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMessageViewController.m; sourceTree = "<group>"; };
-		184B2D8E1B9F176400A3AE24 /* WBDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDiscoverViewController.h; sourceTree = "<group>"; };
-		184B2D8F1B9F176400A3AE24 /* WBDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDiscoverViewController.m; sourceTree = "<group>"; };
-		184B2D911B9F177800A3AE24 /* WBMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMeViewController.h; sourceTree = "<group>"; };
-		184B2D921B9F177800A3AE24 /* WBMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMeViewController.m; sourceTree = "<group>"; };
+		184B2D531B9F039D00A3AE24 /* WBTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBTabBarViewController.h; path = ../../../WBTabBarViewController.h; sourceTree = "<group>"; };
+		184B2D541B9F039D00A3AE24 /* WBTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBTabBarViewController.m; path = ../../../WBTabBarViewController.m; sourceTree = "<group>"; };
+		184B2D881B9F171200A3AE24 /* WBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBHomeViewController.h; path = ../../../WBHomeViewController.h; sourceTree = "<group>"; };
+		184B2D891B9F171200A3AE24 /* WBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBHomeViewController.m; path = ../../../WBHomeViewController.m; sourceTree = "<group>"; };
+		184B2D8B1B9F171E00A3AE24 /* WBMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBMessageViewController.h; path = ../../../WBMessageViewController.h; sourceTree = "<group>"; };
+		184B2D8C1B9F171E00A3AE24 /* WBMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBMessageViewController.m; path = ../../../WBMessageViewController.m; sourceTree = "<group>"; };
+		184B2D8E1B9F176400A3AE24 /* WBDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBDiscoverViewController.h; path = ../../../WBDiscoverViewController.h; sourceTree = "<group>"; };
+		184B2D8F1B9F176400A3AE24 /* WBDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBDiscoverViewController.m; path = ../../../WBDiscoverViewController.m; sourceTree = "<group>"; };
+		184B2D911B9F177800A3AE24 /* WBMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBMeViewController.h; path = ../../../WBMeViewController.h; sourceTree = "<group>"; };
+		184B2D921B9F177800A3AE24 /* WBMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBMeViewController.m; path = ../../../WBMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,19 +89,7 @@
 		184B2D271B9F013D00A3AE24 /* WeiBo */ = {
 			isa = PBXGroup;
 			children = (
-				184B2D2C1B9F013D00A3AE24 /* AppDelegate.h */,
-				184B2D2D1B9F013D00A3AE24 /* AppDelegate.m */,
-				184B2D531B9F039D00A3AE24 /* WBTabBarViewController.h */,
-				184B2D541B9F039D00A3AE24 /* WBTabBarViewController.m */,
-				184B2D881B9F171200A3AE24 /* WBHomeViewController.h */,
-				184B2D891B9F171200A3AE24 /* WBHomeViewController.m */,
-				184B2D8B1B9F171E00A3AE24 /* WBMessageViewController.h */,
-				184B2D8C1B9F171E00A3AE24 /* WBMessageViewController.m */,
-				184B2D8E1B9F176400A3AE24 /* WBDiscoverViewController.h */,
-				184B2D8F1B9F176400A3AE24 /* WBDiscoverViewController.m */,
-				184B2D911B9F177800A3AE24 /* WBMeViewController.h */,
-				184B2D921B9F177800A3AE24 /* WBMeViewController.m */,
-				184B2D351B9F013D00A3AE24 /* Images.xcassets */,
+				18D31F6C1B9FD8AA00BEBFF1 /* Classes */,
 				184B2D281B9F013D00A3AE24 /* Supporting Files */,
 			);
 			path = WeiBo;
@@ -110,8 +98,8 @@
 		184B2D281B9F013D00A3AE24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				184B2D351B9F013D00A3AE24 /* Images.xcassets */,
 				184B2D291B9F013D00A3AE24 /* Info.plist */,
-				184B2D2A1B9F013D00A3AE24 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -131,6 +119,194 @@
 				184B2D431B9F013E00A3AE24 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18D31F6C1B9FD8AA00BEBFF1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18D31F6D1B9FD8AA00BEBFF1 /* Discover(广场) */,
+				18D31F711B9FD8AA00BEBFF1 /* Home(首页) */,
+				18D31F751B9FD8AA00BEBFF1 /* Main(主要) */,
+				18D31F791B9FD8AA00BEBFF1 /* Me(我) */,
+				18D31F7D1B9FD8AA00BEBFF1 /* Message(消息) */,
+				18D31F811B9FD8AA00BEBFF1 /* Other(其他) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18D31F6D1B9FD8AA00BEBFF1 /* Discover(广场) */ = {
+			isa = PBXGroup;
+			children = (
+				18D31F6E1B9FD8AA00BEBFF1 /* Controller */,
+				18D31F6F1B9FD8AA00BEBFF1 /* Model */,
+				18D31F701B9FD8AA00BEBFF1 /* Video */,
+			);
+			path = "Discover(广场)";
+			sourceTree = "<group>";
+		};
+		18D31F6E1B9FD8AA00BEBFF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184B2D8E1B9F176400A3AE24 /* WBDiscoverViewController.h */,
+				184B2D8F1B9F176400A3AE24 /* WBDiscoverViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18D31F6F1B9FD8AA00BEBFF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18D31F701B9FD8AA00BEBFF1 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		18D31F711B9FD8AA00BEBFF1 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				18D31F721B9FD8AA00BEBFF1 /* Controller */,
+				18D31F731B9FD8AA00BEBFF1 /* Model */,
+				18D31F741B9FD8AA00BEBFF1 /* Video */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		18D31F721B9FD8AA00BEBFF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184B2D881B9F171200A3AE24 /* WBHomeViewController.h */,
+				184B2D891B9F171200A3AE24 /* WBHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18D31F731B9FD8AA00BEBFF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18D31F741B9FD8AA00BEBFF1 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		18D31F751B9FD8AA00BEBFF1 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				18D31F761B9FD8AA00BEBFF1 /* Controller */,
+				18D31F771B9FD8AA00BEBFF1 /* Model */,
+				18D31F781B9FD8AA00BEBFF1 /* Video */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		18D31F761B9FD8AA00BEBFF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184B2D531B9F039D00A3AE24 /* WBTabBarViewController.h */,
+				184B2D541B9F039D00A3AE24 /* WBTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18D31F771B9FD8AA00BEBFF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18D31F781B9FD8AA00BEBFF1 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		18D31F791B9FD8AA00BEBFF1 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				18D31F7A1B9FD8AA00BEBFF1 /* Controller */,
+				18D31F7B1B9FD8AA00BEBFF1 /* Model */,
+				18D31F7C1B9FD8AA00BEBFF1 /* Video */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		18D31F7A1B9FD8AA00BEBFF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184B2D911B9F177800A3AE24 /* WBMeViewController.h */,
+				184B2D921B9F177800A3AE24 /* WBMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18D31F7B1B9FD8AA00BEBFF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18D31F7C1B9FD8AA00BEBFF1 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		18D31F7D1B9FD8AA00BEBFF1 /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				18D31F7E1B9FD8AA00BEBFF1 /* Controller */,
+				18D31F7F1B9FD8AA00BEBFF1 /* Model */,
+				18D31F801B9FD8AA00BEBFF1 /* Video */,
+			);
+			path = "Message(消息)";
+			sourceTree = "<group>";
+		};
+		18D31F7E1B9FD8AA00BEBFF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184B2D8B1B9F171E00A3AE24 /* WBMessageViewController.h */,
+				184B2D8C1B9F171E00A3AE24 /* WBMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18D31F7F1B9FD8AA00BEBFF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18D31F801B9FD8AA00BEBFF1 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		18D31F811B9FD8AA00BEBFF1 /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+				184B2D2A1B9F013D00A3AE24 /* main.m */,
+				184B2D2C1B9F013D00A3AE24 /* AppDelegate.h */,
+				184B2D2D1B9F013D00A3AE24 /* AppDelegate.m */,
+			);
+			path = "Other(其他)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +592,7 @@
 				184B2D4A1B9F013E00A3AE24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		184B2D4B1B9F013E00A3AE24 /* Build configuration list for PBXNativeTarget "WeiBoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +601,7 @@
 				184B2D4D1B9F013E00A3AE24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
