@@ -16,6 +16,8 @@
 		18D31FB01B9FDCD300BEBFF1 /* WBMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FA51B9FDCD300BEBFF1 /* WBMessageViewController.m */; };
 		18D31FB11B9FDCD300BEBFF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FAA1B9FDCD300BEBFF1 /* AppDelegate.m */; };
 		18D31FB21B9FDCD300BEBFF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FAB1B9FDCD300BEBFF1 /* main.m */; };
+		18D31FB51B9FE1D400BEBFF1 /* WBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FB41B9FE1D400BEBFF1 /* WBTabBar.m */; };
+		18D31FB81B9FE96000BEBFF1 /* WBTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FB71B9FE96000BEBFF1 /* WBTabBarButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		18D31FA91B9FDCD300BEBFF1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18D31FAA1B9FDCD300BEBFF1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18D31FAB1B9FDCD300BEBFF1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18D31FB31B9FE1D400BEBFF1 /* WBTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBar.h; sourceTree = "<group>"; };
+		18D31FB41B9FE1D400BEBFF1 /* WBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBar.m; sourceTree = "<group>"; };
+		18D31FB61B9FE96000BEBFF1 /* WBTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBarButton.h; sourceTree = "<group>"; };
+		18D31FB71B9FE96000BEBFF1 /* WBTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBarButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +235,10 @@
 		18D31F9B1B9FDCD300BEBFF1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18D31FB31B9FE1D400BEBFF1 /* WBTabBar.h */,
+				18D31FB41B9FE1D400BEBFF1 /* WBTabBar.m */,
+				18D31FB61B9FE96000BEBFF1 /* WBTabBarButton.h */,
+				18D31FB71B9FE96000BEBFF1 /* WBTabBarButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -410,11 +420,13 @@
 			files = (
 				18D31FAD1B9FDCD300BEBFF1 /* WBHomeViewController.m in Sources */,
 				18D31FAF1B9FDCD300BEBFF1 /* WBMeViewController.m in Sources */,
+				18D31FB51B9FE1D400BEBFF1 /* WBTabBar.m in Sources */,
 				18D31FB11B9FDCD300BEBFF1 /* AppDelegate.m in Sources */,
 				18D31FB01B9FDCD300BEBFF1 /* WBMessageViewController.m in Sources */,
 				18D31FAE1B9FDCD300BEBFF1 /* WBTabBarViewController.m in Sources */,
 				18D31FB21B9FDCD300BEBFF1 /* main.m in Sources */,
 				18D31FAC1B9FDCD300BEBFF1 /* WBDiscoverViewController.m in Sources */,
+				18D31FB81B9FE96000BEBFF1 /* WBTabBarButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
