@@ -46,7 +46,7 @@
  */
 - (void)setupChildViewControllers{
     WBHomeViewController *homeVc = [[WBHomeViewController alloc]init];
-    homeVc.tabBarItem.badgeValue = @"10";
+//    homeVc.tabBarItem.badgeValue = @"10";
     [self addTabBarItemWithViewController:homeVc title:@"首页" image:@"tabbar_home_os7" selectedImage:@"tabbar_home_selected_os7"];
     
     WBMessageViewController *messageVc = [[WBMessageViewController alloc]init];

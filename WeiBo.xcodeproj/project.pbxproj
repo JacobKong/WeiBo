@@ -18,6 +18,8 @@
 		18D31FB21B9FDCD300BEBFF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FAB1B9FDCD300BEBFF1 /* main.m */; };
 		18D31FB51B9FE1D400BEBFF1 /* WBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FB41B9FE1D400BEBFF1 /* WBTabBar.m */; };
 		18D31FB81B9FE96000BEBFF1 /* WBTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FB71B9FE96000BEBFF1 /* WBTabBarButton.m */; };
+		18D31FC11BA0432E00BEBFF1 /* WBBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FC01BA0432E00BEBFF1 /* WBBadgeButton.m */; };
+		18D31FC61BA0551200BEBFF1 /* UIImage+KWJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FC51BA0551200BEBFF1 /* UIImage+KWJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,11 @@
 		18D31FB41B9FE1D400BEBFF1 /* WBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBar.m; sourceTree = "<group>"; };
 		18D31FB61B9FE96000BEBFF1 /* WBTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBarButton.h; sourceTree = "<group>"; };
 		18D31FB71B9FE96000BEBFF1 /* WBTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBarButton.m; sourceTree = "<group>"; };
+		18D31FBF1BA0432E00BEBFF1 /* WBBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBBadgeButton.h; sourceTree = "<group>"; };
+		18D31FC01BA0432E00BEBFF1 /* WBBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBBadgeButton.m; sourceTree = "<group>"; };
+		18D31FC21BA0526700BEBFF1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18D31FC41BA0551200BEBFF1 /* UIImage+KWJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KWJ.h"; sourceTree = "<group>"; };
+		18D31FC51BA0551200BEBFF1 /* UIImage+KWJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KWJ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +246,8 @@
 				18D31FB41B9FE1D400BEBFF1 /* WBTabBar.m */,
 				18D31FB61B9FE96000BEBFF1 /* WBTabBarButton.h */,
 				18D31FB71B9FE96000BEBFF1 /* WBTabBarButton.m */,
+				18D31FBF1BA0432E00BEBFF1 /* WBBadgeButton.h */,
+				18D31FC01BA0432E00BEBFF1 /* WBBadgeButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,11 +321,22 @@
 		18D31FA81B9FDCD300BEBFF1 /* Other(其他) */ = {
 			isa = PBXGroup;
 			children = (
+				18D31FC31BA0527A00BEBFF1 /* Category */,
+				18D31FC21BA0526700BEBFF1 /* AppDelegate.h */,
 				18D31FA91B9FDCD300BEBFF1 /* AppDelegate.h */,
 				18D31FAA1B9FDCD300BEBFF1 /* AppDelegate.m */,
 				18D31FAB1B9FDCD300BEBFF1 /* main.m */,
 			);
 			path = "Other(其他)";
+			sourceTree = "<group>";
+		};
+		18D31FC31BA0527A00BEBFF1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18D31FC41BA0551200BEBFF1 /* UIImage+KWJ.h */,
+				18D31FC51BA0551200BEBFF1 /* UIImage+KWJ.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,7 +441,9 @@
 				18D31FAD1B9FDCD300BEBFF1 /* WBHomeViewController.m in Sources */,
 				18D31FAF1B9FDCD300BEBFF1 /* WBMeViewController.m in Sources */,
 				18D31FB51B9FE1D400BEBFF1 /* WBTabBar.m in Sources */,
+				18D31FC61BA0551200BEBFF1 /* UIImage+KWJ.m in Sources */,
 				18D31FB11B9FDCD300BEBFF1 /* AppDelegate.m in Sources */,
+				18D31FC11BA0432E00BEBFF1 /* WBBadgeButton.m in Sources */,
 				18D31FB01B9FDCD300BEBFF1 /* WBMessageViewController.m in Sources */,
 				18D31FAE1B9FDCD300BEBFF1 /* WBTabBarViewController.m in Sources */,
 				18D31FB21B9FDCD300BEBFF1 /* main.m in Sources */,
