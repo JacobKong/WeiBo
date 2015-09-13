@@ -7,6 +7,7 @@
 //
 
 #import "WBHomeViewController.h"
+#import "UIBarButtonItem+KWJ.h"
 
 @interface WBHomeViewController ()
 
@@ -15,6 +16,10 @@
 @implementation WBHomeViewController
 
 - (void)viewDidLoad {
+    // 创建左边按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithBackgroundImage:@"navigationbar_friendsearch_os7" highlightedImage:@"navigationbar_friendsearch_highlighted_os7"];
+    // 设置右边按钮
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWithBackgroundImage:@"navigationbar_pop_os7" highlightedImage:@"navigationbar_pop_highlighted_os7"];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
