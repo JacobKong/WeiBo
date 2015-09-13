@@ -21,6 +21,7 @@
 		18D31FC11BA0432E00BEBFF1 /* WBBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FC01BA0432E00BEBFF1 /* WBBadgeButton.m */; };
 		18D31FC61BA0551200BEBFF1 /* UIImage+KWJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31FC51BA0551200BEBFF1 /* UIImage+KWJ.m */; };
 		18ED2BA01BA51E0A00DB6019 /* WBPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED2B9F1BA51E0A00DB6019 /* WBPostViewController.m */; };
+		18ED2BA31BA5238700DB6019 /* WBNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED2BA21BA5238700DB6019 /* WBNavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		18D31FC51BA0551200BEBFF1 /* UIImage+KWJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KWJ.m"; sourceTree = "<group>"; };
 		18ED2B9E1BA51E0A00DB6019 /* WBPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPostViewController.h; sourceTree = "<group>"; };
 		18ED2B9F1BA51E0A00DB6019 /* WBPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPostViewController.m; sourceTree = "<group>"; };
+		18ED2BA11BA5238700DB6019 /* WBNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNavigationViewController.h; sourceTree = "<group>"; };
+		18ED2BA21BA5238700DB6019 /* WBNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +235,8 @@
 			children = (
 				18D31F981B9FDCD300BEBFF1 /* WBTabBarViewController.h */,
 				18D31F991B9FDCD300BEBFF1 /* WBTabBarViewController.m */,
+				18ED2BA11BA5238700DB6019 /* WBNavigationViewController.h */,
+				18ED2BA21BA5238700DB6019 /* WBNavigationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -484,6 +489,7 @@
 				18D31FB01B9FDCD300BEBFF1 /* WBMessageViewController.m in Sources */,
 				18ED2BA01BA51E0A00DB6019 /* WBPostViewController.m in Sources */,
 				18D31FAE1B9FDCD300BEBFF1 /* WBTabBarViewController.m in Sources */,
+				18ED2BA31BA5238700DB6019 /* WBNavigationViewController.m in Sources */,
 				18D31FB21B9FDCD300BEBFF1 /* main.m in Sources */,
 				18D31FAC1B9FDCD300BEBFF1 /* WBDiscoverViewController.m in Sources */,
 				18D31FB81B9FE96000BEBFF1 /* WBTabBarButton.m in Sources */,

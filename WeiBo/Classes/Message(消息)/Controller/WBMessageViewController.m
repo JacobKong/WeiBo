@@ -15,23 +15,39 @@
 @implementation WBMessageViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  self.navigationItem.rightBarButtonItem =
+      [[UIBarButtonItem alloc] initWithTitle:@"写私信"
+                                       style:UIBarButtonItemStyleDone
+                                      target:self
+                                      action:@selector(textPriviteBtnClicked)];
+  [super viewDidLoad];
+  // Do any additional setup after loading the view.
+}
+- (void)textPriviteBtnClicked {
+  NSLog(@"写私信");
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+  return 1;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section {
+  return 20;
 }
-*/
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  NSString *ID = @"message";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+  // 如果缓存池中没有该ID的cell，则创建一个新的cell
+  if (cell == nil) {
+    // 创建一个新的cell
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
+                                  reuseIdentifier:ID];
+    cell.textLabel.text = @"test";
+  }
+  return cell;
+}
 
 @end

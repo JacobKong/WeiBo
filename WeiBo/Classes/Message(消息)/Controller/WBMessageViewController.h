@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WBMessageViewController : UIViewController
+@interface WBMessageViewController : UITableViewController
 
 @end

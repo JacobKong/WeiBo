@@ -13,6 +13,7 @@
 #import "WBMeViewController.h"
 #import "WBTabBar.h"
 #import "WBPostViewController.h"
+#import "WBNavigationViewController.h"
 
 @interface WBTabBarViewController () <WBTabBarDelegate>
 @property (strong, nonatomic) WBTabBar *customTabBar;
@@ -74,7 +75,7 @@
     vc.view.backgroundColor = [UIColor whiteColor];
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedimage]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     // 2.包装导航控制器
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    WBNavigationViewController *nav = [[WBNavigationViewController alloc]initWithRootViewController:vc];
     [self addChildViewController:nav];
     
     // 3.添加tabber内部按钮
@@ -95,7 +96,7 @@
 
 - (void)didClickedThePlusBtn{
     WBPostViewController *postVc = [[WBPostViewController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:postVc];
+    WBNavigationViewController *nav = [[WBNavigationViewController alloc]initWithRootViewController:postVc];
     postVc.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"取消" style:UIBarButtonItemStyleDone target:self action:@selector(postCancelBtnClick)];
     [self presentViewController:nav animated:YES completion:nil];
 }
