@@ -1,5 +1,5 @@
 //
-//  WBTitleBtn.h
+//  WBSearchBar.h
 //  WeiBo
 //
 //  Created by Jacob on 15/9/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WBTitleBtn : UIButton
-+ (instancetype)titleBtn;
+@interface WBSearchBar : UITextField
++ (instancetype)searchBar;
 @end

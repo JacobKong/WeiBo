@@ -10,7 +10,7 @@
 #import "UIImage+KWJ.h"
 #define WBTitleButtonImageW 20
 @implementation WBTitleBtn
-+ (UIButton *)titleBtn{
++ (instancetype)titleBtn{
     return [[self alloc]init];
 }
 
