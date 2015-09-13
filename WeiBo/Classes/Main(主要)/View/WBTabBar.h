@@ -12,6 +12,7 @@
 
 @optional
 - (void)tabBar:(WBTabBar *)tabBar didSelectedItemFrom:(int)from to:(int)to;
+- (void)didClickedThePlusBtn;
 @end
 
 @interface WBTabBar : UIView

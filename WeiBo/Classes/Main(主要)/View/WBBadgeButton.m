@@ -41,7 +41,9 @@
         
         if (badgeValue.length > 1) {
             // 文字尺寸
-            CGSize badgeSize = [badgeValue sizeWithFont:self.titleLabel.font];
+            NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+            dict[NSFontAttributeName] = self.titleLabel.font;
+            CGSize badgeSize = [badgeValue sizeWithAttributes:dict];
             badgeW = badgeSize.width + 10;
         }
         frame.size.width = badgeW;
