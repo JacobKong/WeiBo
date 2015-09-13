@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		184B2D361B9F013D00A3AE24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B2D351B9F013D00A3AE24 /* Images.xcassets */; };
 		184B2D451B9F013E00A3AE24 /* WeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B2D441B9F013E00A3AE24 /* WeiBoTests.m */; };
+		18C071851BA5C31800D092AF /* WBNewFeathreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C071841BA5C31800D092AF /* WBNewFeathreViewController.m */; };
 		18D31FAC1B9FDCD300BEBFF1 /* WBDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31F8D1B9FDCD300BEBFF1 /* WBDiscoverViewController.m */; };
 		18D31FAD1B9FDCD300BEBFF1 /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31F931B9FDCD300BEBFF1 /* WBHomeViewController.m */; };
 		18D31FAE1B9FDCD300BEBFF1 /* WBTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31F991B9FDCD300BEBFF1 /* WBTabBarViewController.m */; };
@@ -44,6 +45,8 @@
 		184B2D3E1B9F013E00A3AE24 /* WeiBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B2D431B9F013E00A3AE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184B2D441B9F013E00A3AE24 /* WeiBoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiBoTests.m; sourceTree = "<group>"; };
+		18C071831BA5C31800D092AF /* WBNewFeathreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNewFeathreViewController.h; sourceTree = "<group>"; };
+		18C071841BA5C31800D092AF /* WBNewFeathreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNewFeathreViewController.m; sourceTree = "<group>"; };
 		18D31F8C1B9FDCD300BEBFF1 /* WBDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDiscoverViewController.h; sourceTree = "<group>"; };
 		18D31F8D1B9FDCD300BEBFF1 /* WBDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDiscoverViewController.m; sourceTree = "<group>"; };
 		18D31F921B9FDCD300BEBFF1 /* WBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHomeViewController.h; sourceTree = "<group>"; };
@@ -63,7 +66,6 @@
 		18D31FB71B9FE96000BEBFF1 /* WBTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBarButton.m; sourceTree = "<group>"; };
 		18D31FBF1BA0432E00BEBFF1 /* WBBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBBadgeButton.h; sourceTree = "<group>"; };
 		18D31FC01BA0432E00BEBFF1 /* WBBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBBadgeButton.m; sourceTree = "<group>"; };
-		18D31FC21BA0526700BEBFF1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18D31FC41BA0551200BEBFF1 /* UIImage+KWJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KWJ.h"; sourceTree = "<group>"; };
 		18D31FC51BA0551200BEBFF1 /* UIImage+KWJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KWJ.m"; sourceTree = "<group>"; };
 		18ED2B9E1BA51E0A00DB6019 /* WBPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPostViewController.h; sourceTree = "<group>"; };
@@ -149,9 +151,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		18C0717F1BA5C2A900D092AF /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				18C071801BA5C2A900D092AF /* Controller */,
+				18C071811BA5C2A900D092AF /* Model */,
+				18C071821BA5C2A900D092AF /* View */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		18C071801BA5C2A900D092AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18C071831BA5C31800D092AF /* WBNewFeathreViewController.h */,
+				18C071841BA5C31800D092AF /* WBNewFeathreViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18C071811BA5C2A900D092AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18C071821BA5C2A900D092AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		18D31F891B9FDCD300BEBFF1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18C0717F1BA5C2A900D092AF /* NewFeature */,
 				18ED2B9A1BA51DF000DB6019 /* Post */,
 				18D31F8A1B9FDCD300BEBFF1 /* Discover(广场) */,
 				18D31F901B9FDCD300BEBFF1 /* Home(首页) */,
@@ -344,7 +380,6 @@
 			isa = PBXGroup;
 			children = (
 				18D31FC31BA0527A00BEBFF1 /* Category */,
-				18D31FC21BA0526700BEBFF1 /* AppDelegate.h */,
 				18D31FA91B9FDCD300BEBFF1 /* AppDelegate.h */,
 				18D31FAA1B9FDCD300BEBFF1 /* AppDelegate.m */,
 				18D31FAB1B9FDCD300BEBFF1 /* main.m */,
@@ -509,6 +544,7 @@
 				18ED2BA31BA5238700DB6019 /* WBNavigationViewController.m in Sources */,
 				18ED2BAC1BA5A3FB00DB6019 /* WBSearchBar.m in Sources */,
 				18D31FB21B9FDCD300BEBFF1 /* main.m in Sources */,
+				18C071851BA5C31800D092AF /* WBNewFeathreViewController.m in Sources */,
 				18D31FAC1B9FDCD300BEBFF1 /* WBDiscoverViewController.m in Sources */,
 				18D31FB81B9FE96000BEBFF1 /* WBTabBarButton.m in Sources */,
 			);

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WBTabBarViewController.h"
+#import "WBNewFeathreViewController.h"
 
 
 @interface AppDelegate ()
@@ -23,7 +24,7 @@
     // 2.设置window的frame
     self.window.frame = [[UIScreen mainScreen]bounds];
     // 3.设置window的rootviewcontroller
-    self.window.rootViewController = [[WBTabBarViewController alloc]init];
+    self.window.rootViewController = [[WBNewFeathreViewController alloc]init];
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
