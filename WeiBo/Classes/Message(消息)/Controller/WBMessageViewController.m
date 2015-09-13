@@ -26,7 +26,7 @@
 - (void)textPriviteBtnClicked {
   NSLog(@"写私信");
 }
-
+#pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
   return 1;
 }
@@ -50,4 +50,10 @@
   return cell;
 }
 
+#pragma mark UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *vc = [[UIViewController alloc]init];
+    vc.view.backgroundColor = [UIColor blueColor];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end

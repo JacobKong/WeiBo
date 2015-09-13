@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WBHomeViewController : UIViewController
+@interface WBHomeViewController : UITableViewController
 
 @end

@@ -81,7 +81,9 @@
     // 3.添加tabber内部按钮
     [self.customTabBar addTabBarButtonWithItem:vc.tabBarItem];
 }
-
+/**
+ *  设置tabbar
+ */
 - (void)setupTabBar{
     WBTabBar *customTabBar = [[WBTabBar alloc]init];
     customTabBar.frame = self.tabBar.bounds;
@@ -89,6 +91,7 @@
     [self.tabBar addSubview:customTabBar];
     self.customTabBar = customTabBar;
 }
+
 #pragma mark - WBTabBarDelegate
 - (void)tabBar:(WBTabBar *)tabBar didSelectedItemFrom:(int)from to:(int)to{
     self.selectedIndex = to;
