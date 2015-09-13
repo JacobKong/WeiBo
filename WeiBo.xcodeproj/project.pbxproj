@@ -23,6 +23,7 @@
 		18ED2BA01BA51E0A00DB6019 /* WBPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED2B9F1BA51E0A00DB6019 /* WBPostViewController.m */; };
 		18ED2BA31BA5238700DB6019 /* WBNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED2BA21BA5238700DB6019 /* WBNavigationViewController.m */; };
 		18ED2BA61BA56A8500DB6019 /* UIBarButtonItem+KWJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED2BA51BA56A8500DB6019 /* UIBarButtonItem+KWJ.m */; };
+		18ED2BA91BA59F4700DB6019 /* WBTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED2BA81BA59F4700DB6019 /* WBTitleBtn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		18ED2BA21BA5238700DB6019 /* WBNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNavigationViewController.m; sourceTree = "<group>"; };
 		18ED2BA41BA56A8500DB6019 /* UIBarButtonItem+KWJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+KWJ.h"; sourceTree = "<group>"; };
 		18ED2BA51BA56A8500DB6019 /* UIBarButtonItem+KWJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+KWJ.m"; sourceTree = "<group>"; };
+		18ED2BA71BA59F4700DB6019 /* WBTitleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTitleBtn.h; sourceTree = "<group>"; };
+		18ED2BA81BA59F4700DB6019 /* WBTitleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTitleBtn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,8 @@
 		18D31F951B9FDCD300BEBFF1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18ED2BA71BA59F4700DB6019 /* WBTitleBtn.h */,
+				18ED2BA81BA59F4700DB6019 /* WBTitleBtn.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -488,6 +493,7 @@
 				18D31FAD1B9FDCD300BEBFF1 /* WBHomeViewController.m in Sources */,
 				18D31FAF1B9FDCD300BEBFF1 /* WBMeViewController.m in Sources */,
 				18D31FB51B9FE1D400BEBFF1 /* WBTabBar.m in Sources */,
+				18ED2BA91BA59F4700DB6019 /* WBTitleBtn.m in Sources */,
 				18D31FC61BA0551200BEBFF1 /* UIImage+KWJ.m in Sources */,
 				18D31FB11B9FDCD300BEBFF1 /* AppDelegate.m in Sources */,
 				18D31FC11BA0432E00BEBFF1 /* WBBadgeButton.m in Sources */,

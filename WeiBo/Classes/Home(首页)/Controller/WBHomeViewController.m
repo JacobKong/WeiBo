@@ -8,8 +8,11 @@
 
 #import "WBHomeViewController.h"
 #import "UIBarButtonItem+KWJ.h"
+#import "UIImage+KWJ.h"
+#import "WBTitleBtn.h"
 
 @interface WBHomeViewController ()
+@property (weak, nonatomic) UIButton *titleBtn;
 
 @end
 
@@ -20,13 +23,23 @@
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithBackgroundImage:@"navigationbar_friendsearch_os7" highlightedImage:@"navigationbar_friendsearch_highlighted_os7"];
     // 设置右边按钮
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWithBackgroundImage:@"navigationbar_pop_os7" highlightedImage:@"navigationbar_pop_highlighted_os7"];
+    
+    // 设置navBar中间的按钮
+    WBTitleBtn *titleBtn = [WBTitleBtn titleBtn];
+    [titleBtn setTitle:@"Jacob-JK" forState:UIControlStateNormal];
+    [titleBtn setImage:[UIImage imageNamed:@"navigationbar_arrow_down_os7"] forState:UIControlStateNormal];
+
+    titleBtn.frame = CGRectMake(0, 0, 100, 40);
+    [titleBtn addTarget:self action:@selector(titleBtnClicked) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.titleView = titleBtn;
+    self.titleBtn = titleBtn;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)titleBtnClicked {
+    self.titleBtn.selected = !self.titleBtn.selected;
 }
 
 #pragma mark - UITableViewDataSource
