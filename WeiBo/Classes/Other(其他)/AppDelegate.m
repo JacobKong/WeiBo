@@ -21,10 +21,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 1.创建window
     self.window = [[UIWindow alloc]init];
+    NSString *key = @"CFBundleVersion";
+    // 从沙盒中取出上次的版本号
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *lastVersion = [defaults stringForKey:key];
+    
+    // 获取当前的软件版本号
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
+    
+    if ([currentVersion isEqualToString:lastVersion]) {
+        self.window.rootViewController = [[WBTabBarViewController alloc]init];
+    }else{
+        // 显示新版本
+        self.window.rootViewController = [[WBNewFeathreViewController alloc]init];
+        // 存储版本号
+        [defaults setObject:currentVersion forKey:key];
+        [defaults synchronize];
+    }
+    
     // 2.设置window的frame
     self.window.frame = [[UIScreen mainScreen]bounds];
-    // 3.设置window的rootviewcontroller
-    self.window.rootViewController = [[WBNewFeathreViewController alloc]init];
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;

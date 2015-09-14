@@ -23,6 +23,8 @@
     [self setupScrollView];
     // 设置pageControl
     [self setupPageControl];
+    // 设置window背景
+    self.view.backgroundColor = WBColor(246, 246, 246);
 }
 
 // 设置scrollView
