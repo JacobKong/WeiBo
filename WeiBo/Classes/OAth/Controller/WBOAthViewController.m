@@ -11,7 +11,7 @@
 #import "WBAccount.h"
 #import "WBAccountTool.h"
 #import "WBWeiboTool.h"
-#import "MBProgressHUD+MJ.h"
+#import "MBProgressHUD.h"
 
 
 @interface WBOAthViewController ()<UIWebViewDelegate>
@@ -35,19 +35,31 @@
   [super viewDidLoad];
   // Do any additional setup after loading the view.
 }
-
+/**
+ *  页面开始加载前调用
+ *
+ *  @param webView <#webView description#>
+ */
 - (void)webViewDidStartLoad:(UIWebView *)webView{
     // 显示提示框
-    [MBProgressHUD showMessage:@"正在加载"];
+    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    HUD.labelText = @"正在加载";
 }
 
+/**
+ *  页面加载完毕调用
+ */
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     // 隐藏提示框
-    [MBProgressHUD hideHUD];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
+
+/**
+ *  加载失败时调用
+ */
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
     // 隐藏提醒框
-    [MBProgressHUD hideHUD];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 #pragma mark - UIWebViewDelegate
 /**
@@ -95,10 +107,10 @@
         [WBWeiboTool chooseController];
         
         // 7.隐藏提醒框
-        [MBProgressHUD hideHUD];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         // 隐藏提醒框
-        [MBProgressHUD hideHUD];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         NSLog(@"请求失败：%@", error);
     }];
     
