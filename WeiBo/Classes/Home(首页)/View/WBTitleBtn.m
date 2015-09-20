@@ -20,7 +20,7 @@
     if (self) {
         // 高亮的时候不要自动调整图标
         self.adjustsImageWhenHighlighted = NO;
-        self.titleLabel.font = [UIFont systemFontOfSize:16];
+        self.titleLabel.font = [UIFont boldSystemFontOfSize:19];
         self.imageView.contentMode = UIViewContentModeCenter;
         self.titleLabel.textAlignment = NSTextAlignmentRight;
         // 背景
