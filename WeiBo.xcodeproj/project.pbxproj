@@ -10,6 +10,8 @@
 		184B2D361B9F013D00A3AE24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B2D351B9F013D00A3AE24 /* Images.xcassets */; };
 		184B2D451B9F013E00A3AE24 /* WeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B2D441B9F013E00A3AE24 /* WeiBoTests.m */; };
 		1883A2311BABB49F009C57FF /* WBOAthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1883A2301BABB49F009C57FF /* WBOAthViewController.m */; };
+		1893A6801BAEEFD6009CD403 /* WBStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893A67F1BAEEFD6009CD403 /* WBStatus.m */; };
+		1893A6831BAEEFDF009CD403 /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893A6821BAEEFDF009CD403 /* WBUser.m */; };
 		18BD264E1BAE4F2D00897EC1 /* WBAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD264D1BAE4F2D00897EC1 /* WBAccountTool.m */; };
 		18BD26511BAE507500897EC1 /* WBWeiboTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26501BAE507500897EC1 /* WBWeiboTool.m */; };
 		18C071851BA5C31800D092AF /* WBNewFeathreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C071841BA5C31800D092AF /* WBNewFeathreViewController.m */; };
@@ -52,6 +54,10 @@
 		184B2D441B9F013E00A3AE24 /* WeiBoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiBoTests.m; sourceTree = "<group>"; };
 		1883A22F1BABB49F009C57FF /* WBOAthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBOAthViewController.h; sourceTree = "<group>"; };
 		1883A2301BABB49F009C57FF /* WBOAthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBOAthViewController.m; sourceTree = "<group>"; };
+		1893A67E1BAEEFD6009CD403 /* WBStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBStatus.h; sourceTree = "<group>"; };
+		1893A67F1BAEEFD6009CD403 /* WBStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBStatus.m; sourceTree = "<group>"; };
+		1893A6811BAEEFDF009CD403 /* WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUser.h; sourceTree = "<group>"; };
+		1893A6821BAEEFDF009CD403 /* WBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUser.m; sourceTree = "<group>"; };
 		18BD264C1BAE4F2D00897EC1 /* WBAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAccountTool.h; sourceTree = "<group>"; };
 		18BD264D1BAE4F2D00897EC1 /* WBAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAccountTool.m; sourceTree = "<group>"; };
 		18BD264F1BAE507500897EC1 /* WBWeiboTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBWeiboTool.h; sourceTree = "<group>"; };
@@ -321,6 +327,10 @@
 		18D31F941B9FDCD300BEBFF1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1893A67E1BAEEFD6009CD403 /* WBStatus.h */,
+				1893A67F1BAEEFD6009CD403 /* WBStatus.m */,
+				1893A6811BAEEFDF009CD403 /* WBUser.h */,
+				1893A6821BAEEFDF009CD403 /* WBUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -664,12 +674,14 @@
 				18D31FAE1B9FDCD300BEBFF1 /* WBTabBarViewController.m in Sources */,
 				1883A2311BABB49F009C57FF /* WBOAthViewController.m in Sources */,
 				18E734741BAC5F91007C1056 /* WBAccount.m in Sources */,
+				1893A6831BAEEFDF009CD403 /* WBUser.m in Sources */,
 				18BD264E1BAE4F2D00897EC1 /* WBAccountTool.m in Sources */,
 				18ED2BA31BA5238700DB6019 /* WBNavigationViewController.m in Sources */,
 				18ED2BAC1BA5A3FB00DB6019 /* WBSearchBar.m in Sources */,
 				18D31FB21B9FDCD300BEBFF1 /* main.m in Sources */,
 				18C071851BA5C31800D092AF /* WBNewFeathreViewController.m in Sources */,
 				18D31FAC1B9FDCD300BEBFF1 /* WBDiscoverViewController.m in Sources */,
+				1893A6801BAEEFD6009CD403 /* WBStatus.m in Sources */,
 				18D31FB81B9FE96000BEBFF1 /* WBTabBarButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
