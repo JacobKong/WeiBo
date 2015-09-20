@@ -10,9 +10,10 @@
 
 @interface WBAccount : NSObject <NSCoding>
 @property (copy, nonatomic) NSString *access_token;
-@property (copy, nonatomic) NSString *expires_in;
-@property (copy, nonatomic) NSString *remind_in;
-@property (copy, nonatomic) NSString *uid;
+@property (nonatomic, strong) NSDate *expiresTime; // 账号过期时间
+@property (assign, nonatomic) long long expires_in;
+@property (assign, nonatomic) long long remind_in;
+@property (assign, nonatomic) long long uid;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)accountWithDict:(NSDictionary *)dict;

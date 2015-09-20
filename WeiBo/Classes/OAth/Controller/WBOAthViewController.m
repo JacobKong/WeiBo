@@ -9,8 +9,8 @@
 #import "WBOAthViewController.h"
 #import "AFNetworking.h"
 #import "WBAccount.h"
-#import "WBNewFeathreViewController.h"
-#import "WBTabBarViewController.h"
+#import "WBAccountTool.h"
+#import "WBWeiboTool.h"
 
 @interface WBOAthViewController ()<UIWebViewDelegate>
 
@@ -73,31 +73,12 @@
         WBAccount *account = [WBAccount accountWithDict:responseObject];
         
         // 5.存储模型数据
-        NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
-        NSString *file = [doc stringByAppendingPathComponent:@"account.plist"];
-        [NSKeyedArchiver archiveRootObject:account toFile:file];
+        [WBAccountTool saveAccount:account];
         
-        NSString *key = @"CFBundleVersion";
-        
-        // 从沙盒中取出上一次版本好
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSString *lastVersion = [defaults stringForKey:key];
-        
-        // 取出当前版本号
-        NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
-        
-        if ([currentVersion isEqualToString:lastVersion]) {
-            self.view.window.rootViewController = [[WBTabBarViewController alloc]init];
-        }else{
-            // 显示新版本
-            self.view.window.rootViewController = [[WBNewFeathreViewController alloc]init];
-            // 存储版本号
-            [defaults setObject:currentVersion forKey:key];
-            [defaults synchronize];
-        }
-
+        // 6.选择控制器
+        [WBWeiboTool chooseController];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"请求失败：％@", error);
+        NSLog(@"请求失败：%@", error);
     }];
     
 }

@@ -19,6 +19,8 @@
 		18BD26481BADBEB600897EC1 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD263D1BADBEB600897EC1 /* AFURLRequestSerialization.m */; };
 		18BD26491BADBEB600897EC1 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD263F1BADBEB600897EC1 /* AFURLResponseSerialization.m */; };
 		18BD264A1BADBEB600897EC1 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26411BADBEB600897EC1 /* AFURLSessionManager.m */; };
+		18BD264E1BAE4F2D00897EC1 /* WBAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD264D1BAE4F2D00897EC1 /* WBAccountTool.m */; };
+		18BD26511BAE507500897EC1 /* WBWeiboTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26501BAE507500897EC1 /* WBWeiboTool.m */; };
 		18C071851BA5C31800D092AF /* WBNewFeathreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C071841BA5C31800D092AF /* WBNewFeathreViewController.m */; };
 		18D31FAC1B9FDCD300BEBFF1 /* WBDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31F8D1B9FDCD300BEBFF1 /* WBDiscoverViewController.m */; };
 		18D31FAD1B9FDCD300BEBFF1 /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31F931B9FDCD300BEBFF1 /* WBHomeViewController.m */; };
@@ -77,6 +79,10 @@
 		18BD263F1BADBEB600897EC1 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		18BD26401BADBEB600897EC1 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		18BD26411BADBEB600897EC1 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		18BD264C1BAE4F2D00897EC1 /* WBAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAccountTool.h; sourceTree = "<group>"; };
+		18BD264D1BAE4F2D00897EC1 /* WBAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAccountTool.m; sourceTree = "<group>"; };
+		18BD264F1BAE507500897EC1 /* WBWeiboTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBWeiboTool.h; sourceTree = "<group>"; };
+		18BD26501BAE507500897EC1 /* WBWeiboTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBWeiboTool.m; sourceTree = "<group>"; };
 		18C071831BA5C31800D092AF /* WBNewFeathreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNewFeathreViewController.h; sourceTree = "<group>"; };
 		18C071841BA5C31800D092AF /* WBNewFeathreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNewFeathreViewController.m; sourceTree = "<group>"; };
 		18D31F8C1B9FDCD300BEBFF1 /* WBDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDiscoverViewController.h; sourceTree = "<group>"; };
@@ -188,6 +194,7 @@
 		1883A22B1BABB476009C57FF /* OAth */ = {
 			isa = PBXGroup;
 			children = (
+				18BD264B1BAE4E9300897EC1 /* Tool */,
 				1883A22C1BABB476009C57FF /* Controller */,
 				1883A22D1BABB476009C57FF /* Model */,
 				1883A22E1BABB476009C57FF /* View */,
@@ -244,6 +251,15 @@
 				18BD26411BADBEB600897EC1 /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		18BD264B1BAE4E9300897EC1 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				18BD264C1BAE4F2D00897EC1 /* WBAccountTool.h */,
+				18BD264D1BAE4F2D00897EC1 /* WBAccountTool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		18C0717F1BA5C2A900D092AF /* NewFeature */ = {
@@ -480,6 +496,8 @@
 				18D31FA91B9FDCD300BEBFF1 /* AppDelegate.h */,
 				18D31FAA1B9FDCD300BEBFF1 /* AppDelegate.m */,
 				18D31FAB1B9FDCD300BEBFF1 /* main.m */,
+				18BD264F1BAE507500897EC1 /* WBWeiboTool.h */,
+				18BD26501BAE507500897EC1 /* WBWeiboTool.m */,
 			);
 			path = "Other(其他)";
 			sourceTree = "<group>";
@@ -643,6 +661,7 @@
 				18BD26471BADBEB600897EC1 /* AFURLConnectionOperation.m in Sources */,
 				18BD26461BADBEB600897EC1 /* AFSecurityPolicy.m in Sources */,
 				18D31FC61BA0551200BEBFF1 /* UIImage+KWJ.m in Sources */,
+				18BD26511BAE507500897EC1 /* WBWeiboTool.m in Sources */,
 				18BD26441BADBEB600897EC1 /* AFHTTPSessionManager.m in Sources */,
 				18D31FB11B9FDCD300BEBFF1 /* AppDelegate.m in Sources */,
 				18D31FC11BA0432E00BEBFF1 /* WBBadgeButton.m in Sources */,
@@ -656,6 +675,7 @@
 				18BD264A1BADBEB600897EC1 /* AFURLSessionManager.m in Sources */,
 				18E734741BAC5F91007C1056 /* WBAccount.m in Sources */,
 				18BD26451BADBEB600897EC1 /* AFNetworkReachabilityManager.m in Sources */,
+				18BD264E1BAE4F2D00897EC1 /* WBAccountTool.m in Sources */,
 				18BD26491BADBEB600897EC1 /* AFURLResponseSerialization.m in Sources */,
 				18BD26481BADBEB600897EC1 /* AFURLRequestSerialization.m in Sources */,
 				18ED2BA31BA5238700DB6019 /* WBNavigationViewController.m in Sources */,

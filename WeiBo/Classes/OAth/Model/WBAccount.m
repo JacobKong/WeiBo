@@ -25,17 +25,20 @@
     self = [super init];
     if (self) {
         _access_token = [coder decodeObjectForKey:@"access_token"];
-        _expires_in = [coder decodeObjectForKey:@"expires_in"];
-        _remind_in = [coder decodeObjectForKey:@"remind_in"];
-        _uid = [coder decodeObjectForKey:@"uid"];
+        _expiresTime = [coder decodeObjectForKey:@"expiresTime"];
+        _expires_in = [coder decodeInt64ForKey:@"expires_in"];
+        _remind_in = [coder decodeInt64ForKey:@"remind_in"];
+        _uid = [coder decodeInt64ForKey:@"uid"];
+        
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder{
     [aCoder encodeObject:self.access_token forKey:@"access_token"];
-    [aCoder encodeObject:self.expires_in forKey:@"expires_in"];
-    [aCoder encodeObject:self.remind_in forKey:@"_remind_in"];
-    [aCoder encodeObject:self.uid forKey:@"uid"];
+    [aCoder encodeInt64:self.expires_in forKey:@"expires_in"];
+    [aCoder encodeInt64:self.remind_in forKey:@"_remind_in"];
+    [aCoder encodeInt64:self.uid forKey:@"uid"];
+    [aCoder encodeObject:self.expiresTime forKey:@"expiresTime"];
 }
 @end
