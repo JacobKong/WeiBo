@@ -21,6 +21,9 @@
 		18BD264A1BADBEB600897EC1 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26411BADBEB600897EC1 /* AFURLSessionManager.m */; };
 		18BD264E1BAE4F2D00897EC1 /* WBAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD264D1BAE4F2D00897EC1 /* WBAccountTool.m */; };
 		18BD26511BAE507500897EC1 /* WBWeiboTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26501BAE507500897EC1 /* WBWeiboTool.m */; };
+		18BD26581BAE60FF00897EC1 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26541BAE60FF00897EC1 /* MBProgressHUD+MJ.m */; };
+		18BD26591BAE60FF00897EC1 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18BD26551BAE60FF00897EC1 /* MBProgressHUD.bundle */; };
+		18BD265A1BAE60FF00897EC1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26571BAE60FF00897EC1 /* MBProgressHUD.m */; };
 		18C071851BA5C31800D092AF /* WBNewFeathreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C071841BA5C31800D092AF /* WBNewFeathreViewController.m */; };
 		18D31FAC1B9FDCD300BEBFF1 /* WBDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31F8D1B9FDCD300BEBFF1 /* WBDiscoverViewController.m */; };
 		18D31FAD1B9FDCD300BEBFF1 /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D31F931B9FDCD300BEBFF1 /* WBHomeViewController.m */; };
@@ -83,6 +86,11 @@
 		18BD264D1BAE4F2D00897EC1 /* WBAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAccountTool.m; sourceTree = "<group>"; };
 		18BD264F1BAE507500897EC1 /* WBWeiboTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBWeiboTool.h; sourceTree = "<group>"; };
 		18BD26501BAE507500897EC1 /* WBWeiboTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBWeiboTool.m; sourceTree = "<group>"; };
+		18BD26531BAE60FF00897EC1 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		18BD26541BAE60FF00897EC1 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		18BD26551BAE60FF00897EC1 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		18BD26561BAE60FF00897EC1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		18BD26571BAE60FF00897EC1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		18C071831BA5C31800D092AF /* WBNewFeathreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNewFeathreViewController.h; sourceTree = "<group>"; };
 		18C071841BA5C31800D092AF /* WBNewFeathreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNewFeathreViewController.m; sourceTree = "<group>"; };
 		18D31F8C1B9FDCD300BEBFF1 /* WBDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDiscoverViewController.h; sourceTree = "<group>"; };
@@ -260,6 +268,18 @@
 				18BD264D1BAE4F2D00897EC1 /* WBAccountTool.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		18BD26521BAE60FF00897EC1 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				18BD26531BAE60FF00897EC1 /* MBProgressHUD+MJ.h */,
+				18BD26541BAE60FF00897EC1 /* MBProgressHUD+MJ.m */,
+				18BD26551BAE60FF00897EC1 /* MBProgressHUD.bundle */,
+				18BD26561BAE60FF00897EC1 /* MBProgressHUD.h */,
+				18BD26571BAE60FF00897EC1 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		18C0717F1BA5C2A900D092AF /* NewFeature */ = {
@@ -516,6 +536,7 @@
 		18DBC3E51BABC55000B00D86 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				18BD26521BAE60FF00897EC1 /* MBProgressHUD */,
 				18BD262E1BADBEB600897EC1 /* AFNetworking */,
 			);
 			path = Lib;
@@ -637,6 +658,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184B2D361B9F013D00A3AE24 /* Images.xcassets in Resources */,
+				18BD26591BAE60FF00897EC1 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +677,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D31FAD1B9FDCD300BEBFF1 /* WBHomeViewController.m in Sources */,
+				18BD26581BAE60FF00897EC1 /* MBProgressHUD+MJ.m in Sources */,
 				18D31FAF1B9FDCD300BEBFF1 /* WBMeViewController.m in Sources */,
 				18D31FB51B9FE1D400BEBFF1 /* WBTabBar.m in Sources */,
 				18ED2BA91BA59F4700DB6019 /* WBTitleBtn.m in Sources */,
@@ -668,6 +691,7 @@
 				18D31FB01B9FDCD300BEBFF1 /* WBMessageViewController.m in Sources */,
 				18ED2BA61BA56A8500DB6019 /* UIBarButtonItem+KWJ.m in Sources */,
 				18ED2BA01BA51E0A00DB6019 /* WBPostViewController.m in Sources */,
+				18BD265A1BAE60FF00897EC1 /* MBProgressHUD.m in Sources */,
 				18D31FAE1B9FDCD300BEBFF1 /* WBTabBarViewController.m in Sources */,
 				18BD26431BADBEB600897EC1 /* AFHTTPRequestOperationManager.m in Sources */,
 				1883A2311BABB49F009C57FF /* WBOAthViewController.m in Sources */,

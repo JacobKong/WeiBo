@@ -11,6 +11,8 @@
 #import "WBAccount.h"
 #import "WBAccountTool.h"
 #import "WBWeiboTool.h"
+#import "MBProgressHUD+MJ.h"
+
 
 @interface WBOAthViewController ()<UIWebViewDelegate>
 
@@ -32,6 +34,20 @@
   [webView loadRequest:request];
   [super viewDidLoad];
   // Do any additional setup after loading the view.
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView{
+    // 显示提示框
+    [MBProgressHUD showMessage:@"正在加载"];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    // 隐藏提示框
+    [MBProgressHUD hideHUD];
+}
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    // 隐藏提醒框
+    [MBProgressHUD hideHUD];
 }
 #pragma mark - UIWebViewDelegate
 /**
@@ -77,7 +93,12 @@
         
         // 6.选择控制器
         [WBWeiboTool chooseController];
+        
+        // 7.隐藏提醒框
+        [MBProgressHUD hideHUD];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        // 隐藏提醒框
+        [MBProgressHUD hideHUD];
         NSLog(@"请求失败：%@", error);
     }];
     
