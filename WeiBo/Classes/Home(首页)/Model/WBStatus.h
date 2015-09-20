@@ -35,7 +35,5 @@
  */
 @property (nonatomic, strong) WBUser *user;
 
-+ (instancetype)statusWithDict:(NSDictionary *)dict;
-- (instancetype)initWithDict:(NSDictionary *)dict;
 
 @end

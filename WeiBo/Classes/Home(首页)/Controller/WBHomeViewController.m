@@ -16,6 +16,7 @@
 #import "UIImageView+WebCache.h"
 #import "WBStatus.h"
 #import "WBUser.h"
+#import "MJExtension.h"
 
 @interface WBHomeViewController ()
 @property(weak, nonatomic) UIButton *titleBtn;
@@ -55,15 +56,7 @@
   [mgr GET:@"https://api.weibo.com/2/statuses/home_timeline.json"
       parameters:params
       success:^(AFHTTPRequestOperation *operation, id responseObject) {
-          NSDictionary *dictArray = responseObject[@"statuses"];
-          NSMutableArray *statusArray = [NSMutableArray array];
-          
-          for (NSDictionary *dict in dictArray) {
-              WBStatus *status = [WBStatus statusWithDict:dict];
-              
-              [statusArray addObject:status];
-          }
-          self.statuses = statusArray;
+          self.statuses = [WBStatus objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
           
           [self.tableView reloadData];
       }
